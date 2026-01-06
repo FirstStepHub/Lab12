@@ -1,6 +1,8 @@
 #include<iostream>
-
 using namespace std;
+
+template <class diffType>
+void mySwap(diffType &,diffType &); 
 
 int main(){
 	int x, y;
@@ -30,3 +32,10 @@ int main(){
 	return 0;
 }
 
+template <class diffType>
+void mySwap(diffType &x,diffType &y){
+    diffType storage = x ;
+    x = y ;
+    y = storage ;
+
+}
